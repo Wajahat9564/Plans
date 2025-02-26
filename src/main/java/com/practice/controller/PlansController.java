@@ -43,6 +43,7 @@ public class PlansController {
 	@PostMapping("/plan")
 	public ResponseEntity<String> savePlans(@RequestBody Plans plans)
 	{
+		System.out.println("Hello----------------");
 		String msg = AppConstant.EMPTY_STR;
 		boolean save = planService.save(plans);
 		if(save)
