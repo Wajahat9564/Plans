@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: Plans_API
+  datasource:
+    url: jdbc:postgresql://127.0.0.1:5432/majorProject_db
+    username: postgres
+    password: 9564
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+plans-api:
+  messages:
+    plansSavedSucc: Plans Saved Successfully
+    plansSavedFail: Plans Didn't Save
+    planUpdatedSucc: Plans Updated Successfully
+    planUpdatedFail: Plan Updation Failed
+    plansDeletedSucc: Plans Deleted Successfully
+    plansDeletedFail: Plans Not Deleted
+    planChangedStatusSucc: Plans Status Changed Successfully
+    planChangedStatusFail: Plan Status Not Changed
